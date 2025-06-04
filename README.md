@@ -1,2 +1,10 @@
 # fake_UserData
-mini-project where database in integrated to frontend on a localserver (port:8080). Perfoming CRUD Operations on data using REST API and MySQL Database.
+mini-project demonstrating Rest API's and Database Connectivity.
+# Technologies Used
+-NodeJS
+-ExpressJS
+-MySQL
+-EJS
+-Rest API
+# About
+connected the MySQL database to the LocalServer (port:8080) using NodeJS and ExpressJS. Performing CRUD Operations on Data using REST APIs.
