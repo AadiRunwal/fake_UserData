@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <a href="/">Back</a>
+    <h1>All Users :</h1>
+    <table>
+        <tr>
+            <th>Sr.No.</th>
+            <th>Id</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        <% for(let user of users){ %>
+                <tr>
+                    <td><%= count++ %></td>
+                    <td><%= user.id %></td>
+                    <td><%= user.username %></td>
+                    <td><%= user.email %></td>
+                    <td><%= user.password %></td>
+                    <td>
+                        <a href="/user/<%= user.id %>"><button>Update</button></a>
+                    </td>
+                    <td>
+                        <form action="/user/<%= user.id %>/destroy">
+                            <button>Delete</button>
+                        </form>
+                    </td>
+                </tr>
+        <% } %>
+    </table>
+</body>
+</html>
